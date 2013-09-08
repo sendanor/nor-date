@@ -1,7 +1,7 @@
 {
   "name": "nor-date",
-  "version": "0.1.4",
-  "description": "Date helpers for Node.js",
+  "version": "0.1.5",
+  "description": "Date and time helpers for Node.js and browsers",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
