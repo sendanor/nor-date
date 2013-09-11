@@ -1,6 +1,6 @@
 {
   "name": "nor-date",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Date and time helpers for Node.js and browsers",
   "main": "lib/index.js",
   "scripts": {
