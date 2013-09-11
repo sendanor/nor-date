@@ -37,7 +37,7 @@ differences and unsupported features. Please
 missing features or wrong behaviour.
 
 The `opts` -- which is an object -- can be used to change the locale with 
-the property named `locale`.
+the property named `lang`.
 
 #### Example 1
 
@@ -47,8 +47,8 @@ To get current date as YYYY-MM-DD you can call it
 #### Example 2
 
 To get current month name in Finnish locale you can call it 
-`nor_date.format('%B', {locale:'fi'})` or 
-`nor_date.format({locale:'fi'}, '%B')`.
+`nor_date.format('%B', {lang:'fi'})` or 
+`nor_date.format({lang:'fi'}, '%B')`.
 
 #### Example 3
 
@@ -57,7 +57,7 @@ it like:
 
 ```javascript
 var t = new Date(2013, 8, 15);
-console.log( nor_date.format({locale:'fi'}, '%B', t) );
+console.log( nor_date.format({lang:'fi'}, '%B', t) );
 ```
 
 #### Binding support
@@ -68,8 +68,8 @@ functions very easy.
 ```javascript
 var t = new Date(2013, 8, 15);
 
-var fi_format = nor_date.format.bind(undefined, {locale:'fi'});
-var fi_date_format = nor_date.format.bind(undefined, {locale:'fi'}, '%a %d %B %Y');
+var fi_format = nor_date.format.bind(undefined, {lang:'fi'});
+var fi_date_format = nor_date.format.bind(undefined, {lang:'fi'}, '%a %d %B %Y');
 
 console.log( fi_format('%a %d %B %Y', t) );
 console.log( fi_date_format(t) );
