@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Sendanor/nor-date.git"
+    "url": "git://github.com/sendanor/nor-date.git"
   },
   "keywords": [
     "Date",
@@ -20,6 +20,6 @@
     "nor-is": "*"
   },
   "bugs": {
-    "url": "https://github.com/Sendanor/nor-date/issues"
+    "url": "https://github.com/sendanor/nor-date/issues"
   }
 }
