@@ -1,10 +1,11 @@
 {
   "name": "nor-date",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "Date and time helpers for Node.js and browsers",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jshint": "jshint lib/"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,11 @@
   "license": "MIT",
   "dependencies": {
     "nor-is": ">= 0.1.14 < 0.2.0"
+  },
+  "devDependencies": {
+    "lint"         : "*",
+    "jshint"       : "*",
+    "mocha"        : "*"
   },
   "bugs": {
     "url": "https://github.com/sendanor/nor-date/issues"
