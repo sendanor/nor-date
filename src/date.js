@@ -1,7 +1,8 @@
-/* Helper functions */
+/* nor-date */
 (function(helpers, global) {
 "use strict";
 
+var ARRAY = require('nor-array');
 var is = (typeof require !== 'undefined') ? require('nor-is') : global && global.nor_is;
 if(!is) { throw new TypeError("nor-date requires nor-is"); }
 
@@ -37,7 +38,7 @@ function _setup_locale(name, parent_name, opts) {
 
 	var obj = copy_obj(_locales[parent_name]);
 	opts = copy_obj(opts);
-	Object.keys(_locales.$def).forEach(function(key) {
+	ARRAY(Object.keys(_locales.$def)).forEach(function(key) {
 		obj[key] = opts[key] || obj[key] || _locales.$def[key];
 	});
 	_locales[name] = obj;
@@ -171,7 +172,7 @@ helpers.setCurrentLocale = function(name) {
 helpers.format = function() {
 	var format_str, opts, time;
 	var args = Array.prototype.slice.call(arguments);
-	args.map(function(arg) {
+	ARRAY(args).forEach(function(arg) {
 		if(is.string(arg)) {
 			format_str = arg;
 			return;
@@ -253,11 +254,11 @@ helpers.longSince = function(time, now) {
 		[mins, 'minuuttia'],
 		[secs, 'sekuntia']
 	];
-	items = items.filter(function(item) {
+	items = ARRAY(items).filter(function(item) {
 		return (item[0] !== 0) ? true : false;
 	}).map(function(item) {
 		return item.join(' ');
-	});
+	}).valueOf();
 	items.push( (now.getTime() < time.getTime()) ? 'jäljellä' : 'sitten' );
 	return items.join(' ');
 };
