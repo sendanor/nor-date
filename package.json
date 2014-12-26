@@ -1,6 +1,6 @@
 {
   "name": "nor-date",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "Date and time helpers for Node.js and browsers",
   "main": "./src/index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "nor-is": ">= 0.1.16 < 0.2.0",
-    "nor-array": ">= 0.1.5 < 0.2.0"
+    "nor-array": ">= 0.1.6 < 0.2.0"
   },
   "devDependencies": {
     "lint"         : "*",
