@@ -1,6 +1,6 @@
 {
   "name": "nor-date",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "Date and time helpers for Node.js and browsers",
   "main": "./src/index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "author": "Jaakko-Heikki Heusala <jheusala@iki.fi>",
   "license": "MIT",
   "dependencies": {
-    "nor-is": ">= 0.1.17 < 0.2.0",
+    "nor-is": ">= 0.1.18 < 0.2.0",
     "nor-array": ">= 0.1.8 < 0.2.0"
   },
   "devDependencies": {
